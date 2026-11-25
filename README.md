@@ -9,7 +9,7 @@
 ## folders
 - data/      malek: dataset prep, preprocessing
 - model/     humraj: NumPy CNN, Keras reference
-- optimize/  benson: pruning, quantization, Huffman
+- optimize/  all: pruning, quantization, Huffman
 - demo/      benson: OpenCV webcam demo
 - results/   plots and metrics
 
