@@ -21,7 +21,7 @@ from layers import Conv2D, MaxPool2D, Flatten, Linear
 from activation import relu
 from model import CNN
 from losses import cross_entropy, accuracy
-from optimizers import Adam
+from optimizers import HuffmanEncoding
 from training import load_mnist, iterate_minibatches
 
 np.random.seed(42)
@@ -51,7 +51,7 @@ EPOCHS      = 5
 BATCH_SIZE  = 64
 LR          = 0.001
 
-optimizer = Adam(model.parameters(), lr=LR)
+optimizer = HuffmanEncoding(model.parameters(), lr=LR)
 best_test_acc = 0.0
 
 for epoch in range(EPOCHS):
