@@ -57,7 +57,7 @@ class Adam(Optimizer):
 
             p.data -= self.lr * m_hat / (np.sqrt(v_hat) + self.eps)
 
-class DeepCompressor(Optimizer):
+class HuffmanEncoding(Optimizer):
     def __init__(self, model_path, test_data, train_data, k, lr):
         self.test_data = test_data
         self.train_data = train_data
